@@ -1,0 +1,59 @@
+.company {
+    margin-top: 10rem;
+    &-wrap {
+        margin-top: 8rem;
+        display: flex;
+        gap: 5.6rem;
+    }
+    &-img img {
+        width: 45.2rem;
+        height: 60rem;
+    }
+    &-text {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        font-size: 1.8rem;
+        line-height: 1.6;
+        color: #4D4D4D;
+        & span {
+            font-weight: 500;
+        }
+    }
+    &-mirror {
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        padding: 3.6rem 27rem;
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 1.5;
+        color: #4D4D4D;
+        border: .2rem solid #F1CDD1;
+        border-radius: 1rem;
+        text-align: center;
+        & span {
+            font-style: italic;
+        }
+    }
+}
+@media (max-width: 479.9px) {
+    .company {
+        &-wrap {
+            flex-direction: column;
+        }
+        &-img img {
+            width: 100%;
+            height: 100%;
+        }
+        &-text {
+            font-size: 4rem;
+            & span {
+                font-weight: 500;
+            }
+        }
+        &-mirror {
+            font-size: 4rem;
+        }
+    }
+}

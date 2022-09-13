@@ -1,0 +1,38 @@
+.new {
+   margin-top: 15rem;
+   &-items {
+    max-height: 57.5rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    &__item {
+        &-img {
+         width: 57.5rem;
+         height: 50.9rem;
+        }
+        &-subtitle {
+            margin-top: -4rem;
+            margin-left: 2rem;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 1.2;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+   }
+   &-img__three {
+    margin-top: 1rem;
+    width: 37.7rem;
+    height: 51.4rem;
+   }
+   &-img__four {
+    margin-top: 1rem;
+    width: 77.3rem;
+    height: 51.4rem;
+   }
+   &-grey {
+    color: #6D6868;
+   }
+}

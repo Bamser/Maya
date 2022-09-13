@@ -1,0 +1,94 @@
+.news {
+    margin-top: 10rem;
+    &-list {
+        margin-top: 4.2rem;
+        display: flex;
+        justify-content: center;
+        gap: 8rem;
+        & a {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 1.2;
+            color: #4D4D4D; 
+        }
+    }
+    &-social {
+        margin-top: 5.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 7rem;
+        & img {
+            width: 5.7rem;
+            height: 5.7rem;
+        }
+        & img:hover {
+            transform: scale(1.05);
+        }
+    }
+    &-email {
+        margin-top: 6.4rem;
+        text-align: center;
+        &__text {
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 1.2;
+            color: rgba(77, 77, 77, 0.5);
+
+        }
+        &__buttons {
+            margin-top: 2.2rem;
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            &-white {
+                background-color: #fff;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 1.2;
+                text-transform: uppercase;
+                color: rgba(77, 77, 77, 0.6);
+                border: .05rem solid rgba(77, 77, 77, 0.6);
+            }
+            &-pink {
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 1.2;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media(max-width:479.9px) {
+    .news {
+        &-list {
+            & a {
+                font-size: 4rem;
+            }
+        }
+        &-social {
+            & img {
+                width: 9rem;
+                height: 9rem;
+            }
+            & img:hover {
+                background:none !important;
+            }
+        }
+        &-email {
+            &__text {
+                font-size: 3rem;
+            }
+            &__buttons {
+                margin-top: 5rem;
+                gap: 6rem;
+                &-white {
+                    font-size: 3rem;
+                }
+                &-pink {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}

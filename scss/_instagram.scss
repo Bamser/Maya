@@ -1,0 +1,49 @@
+.instagram {
+    margin-top: 10rem;
+    &-items {
+        margin: 0 auto;
+        max-width: 105rem;
+        margin-top: 8rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    &-item:hover {
+        opacity: 0.7;
+    }
+    &-button {
+        margin: 8rem auto;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+}
+
+@media(max-width:479.9px) {
+    .instagram {
+        margin-top: 10rem;
+        &-items {
+            margin: 0 auto;
+            max-width: 105rem;
+            margin-top: 8rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 2rem;
+        }
+        &-item:hover {
+            opacity: 0.7;
+        }
+        &-button {
+            margin-top: 4rem;
+            padding: 3rem 7rem;
+            font-size: 4rem;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+    }
+    
+}

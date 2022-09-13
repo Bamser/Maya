@@ -1,0 +1,34 @@
+.catalog {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    &-items {
+        margin-top: 11rem;
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            width: 27.8rem;
+            height: 41.8rem;
+            text-align: center;
+            &-img{
+                width: 100%;
+                height: 100%;
+            }
+            &-subtitle {
+                margin-top: -7rem;
+                padding: 2.4rem 5.2rem;
+                font-weight: 500;
+                font-size: 2rem;
+                line-height: 1.2;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                background: rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(.8rem);
+                &:hover {
+                    font-size: 2.2rem;
+                    backdrop-filter: blur(2rem);
+                }
+            }
+        }
+    }
+}

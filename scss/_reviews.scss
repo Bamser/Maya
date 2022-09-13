@@ -1,0 +1,96 @@
+.button__wrap {
+    display: flex;
+    justify-content: center;
+}
+.reviews {
+    margin-top: 10rem;
+    &-button {
+        margin-top: 8rem;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &-items {
+        margin-top: 10rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+    &-item {
+        position: relative;
+        text-align: center;
+        &__img img {
+            min-height: 35.5rem;
+            border-radius: 10px;
+        }
+        &__img::after {
+            position: absolute;
+            content: '';
+            background-image: url(../image/reviews/trigle.svg);
+            background-repeat: no-repeat;
+            width: 3.4rem;
+            height: 3.4rem;
+            right: 40%;
+            bottom: 50%;
+        }
+        &__img:hover {
+            filter: brightness(50%); 
+        }
+        &__active {
+           
+        }
+        &__text {
+            margin-top: .5rem;
+            font-style: italic;
+            font-size: 1.8rem;
+            line-height: 1.2;
+            color: #4D4D4D;
+        }
+    }
+}
+@media (max-width: 479.9px) {
+    .reviews {
+    &-button {
+        font-size: 3.2rem;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+    }
+    &-items {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       flex-wrap: nowrap;
+        gap: 5rem;
+    }
+    &-item {
+        position: relative;
+        text-align: center;
+        &__img::after {
+            position: absolute;
+            content: '';
+            background-image: url(../image/reviews/trigle.svg);
+            background-repeat: no-repeat;
+            width: 10rem;
+            height: 10rem;
+            right: 40%;
+            bottom: 50%;
+        }
+        &__img:hover {
+            filter: brightness(50%); 
+        }
+        &__text {
+            margin-top: 1rem;
+            font-style: italic;
+            font-size: 5rem;
+            line-height: 1.2;
+            color: #4D4D4D;
+        }
+    }
+}
+}

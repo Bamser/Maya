@@ -1,0 +1,107 @@
+.main {
+    margin-top: 10rem;
+    &-container {
+        max-width: 73.2rem;
+        margin: 0 auto;
+    }
+    &-desc {
+        margin-top: 10rem;
+        &__title {
+            margin-top: 6rem;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 1.5;
+            color: #4D4D4D;
+        }
+        &__text {
+            margin-top: 5rem;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            color: #4D4D4D;
+            & span {
+                display: block;
+                margin-top: 2rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+.pay {
+    &__container {
+        max-width: 73.2rem;
+        margin: 0 auto;
+    }
+    &-title {
+        margin-top: 8rem;
+    }
+    &-desc {
+        margin-top: 6rem;
+        &__title {
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            text-transform: uppercase;
+            color: #4D4D4D;
+        }
+        &__text {
+            margin-top: 3rem;
+            font-weight: 400;
+            font-size: 1.8rem;
+            color: #4D4D4D;
+        }
+    }
+}
+.list-items ul {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #4D4D4D;
+   & li {
+    margin-left: 3rem;
+    list-style: disc;
+   }
+}
+.list-title {
+    margin-top: 3rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #4D4D4D;
+}
+
+@media(max-width:479.9px) {
+    .main {
+        &-container {
+            max-width: 120rem;
+        }
+        &-desc {
+            &__title {
+                font-size: 4rem;
+            }
+            &__text {
+                font-size: 3rem;
+            }
+        }
+    }
+    .pay {
+   
+        &-desc {
+            &__title {
+                font-size: 4rem;
+            }
+            &__text {
+                font-size: 3rem;
+            }
+        }
+    }
+    .list-items ul {
+        font-size: 3rem;
+       & li {
+        margin-left: 3rem;
+       }
+    }
+    .list-title {
+        font-size: 3rem;
+    }
+}

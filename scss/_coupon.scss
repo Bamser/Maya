@@ -1,0 +1,32 @@
+.coupon {
+    margin-top: 60rem;
+    width: 100%;
+    min-height: 30rem;
+    background-image: url(../image/coupon_bg.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    &-desc {
+        padding-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__text {
+            font-weight: 400;
+            font-size: 3rem;
+            line-height: 1.5;
+            text-transform: uppercase;
+            color: #4D4D4D;
+            max-width: 70rem;
+            text-align: center;
+            & span {
+                font-weight: 600;
+            }
+        }
+        &__button {
+            margin-top: 2.6rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+    }
+}

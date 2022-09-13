@@ -1,0 +1,34 @@
+.footer {
+    margin-top: 20rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    & span {
+        display: block;
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        color: #4D4D4D;
+    }
+    &-copy {
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        color: #4D4D4D;
+        opacity: 0.8;
+    }
+}
+
+@media(max-width:479.9px) {
+    .footer {
+        margin-top: 12rem;
+        & span {
+            font-size: 2rem;
+            line-height: 1;
+        }
+        &-copy {
+            font-size: 2rem;
+            line-height: 1;
+        }
+    }
+}
